@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style..css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container py-3">
+        <div class="logo d-flex align-items-center">
+          <a href="#"
+            ><img class="w-75" src="imgs/11.png" alt="nav-logo-img"
+          /></a>
+          <div class="logo-text">
+            <a class="navbar-brand" href="#">Weather</a>
+            <p class="text-white">Tagline Goes Here</p>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler d-md-block d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-grip-lines"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav ms-auto gap-4 mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="" href="#">Live Cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="container">
+        <div class="search">
+          <input
+            id="search-input"
+            type="search"
+            class="input-data form-control p-3"
+            placeholder="Find Your Location"
+          />
+          <input
+            id="search-btn"
+            type="button"
+            class="find rounded rounded-pill text-center"
+            value="Find"
+          />
+        </div>
+        <div class="result">
+          <div>
+            <div class="row g-0">
+              <div class="col-lg-4">
+                <div class="today">
+                  <div class="card">
+                    <div
+                      id="today-date"
+                      class="card-header d-flex justify-content-between py-1 px-3 text-bg-dark"
+                    >
+                      <p id="today-day-name">Sunday</p>
+                      <span>
+                        <span id="today-day-number">17</span>
+                        <span id="today-day-month">Jansuary</span>
+                      </span>
+                    </div>
+
+                    <div id="today-content" class="card-body text-start">
+                      <p id="today-location" class="today-location">Giza</p>
+                      <div
+                        class="d-flex justify-content-start align-items-center px-3 py- pt-2 text-light"
+                      >
+                        <span class="today-span-temp">
+                          <span class="fw-bolder" id="today-temp">15</span>
+                          <span class="fw-bolder"><sup>o</sup>C</span>
+                        </span>
+                        <img
+                          id="today-temp-img"
+                          class=""
+                          style="height: 90px; width: 90px"
+                          src="imgs/Screenshot 2022-01-14 080319.png"
+                          alt=""
+                        />
+                      </div>
+                      <p id="today-condition" class="">sunny</p>
+                      <div class="text-black d-flex justify-content-between">
+                        <span class="fw-bolder">
+                          <i id="humidity" class="fa-solid fa-umbrella">!!</i>%
+                        </span>
+                        <span class="fw-bolder">
+                          <i id="wind" class="fa-solid fa-wind">!!</i>
+                        </span>
+                        <span class="fw-bolder">
+                          <i id="wind-direction" class="fa-solid fa-compass"
+                            >!!</i
+                          >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="tomorrow">
+                  <div class="card text-center">
+                    <div id="next-date" class="card-header bg-dark py-1 px-3">
+                      <p class="next-day-name">Monday</p>
+                    </div>
+                    <div class="card-body px-3 py-3 pt-5">
+                      <img
+                        class="next-temp-img"
+                        src="imgs/Screenshot 2022-01-14 080319.png"
+                        alt=""
+                        style="height: 90px; width: 90px"
+                      />
+                      <h3>
+                        <span class="next-max-temp">15</span>
+                        <span><sup>o</sup>C</span>
+                      </h3>
+                      <h5 class="text-muted">
+                        <span class="next-min-temp fw-bolder">6</span>
+                        <span><sup>o</sup>C</span>
+                      </h5>
+                      <p class="next-condition-text">cloudy</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="after-tomorrow">
+                  <div class="card text-center">
+                    <div id="next-date" class="card-header bg-dark py-1 px-3">
+                      <p class="next-day-name">Monday</p>
+                    </div>
+                    <div class="card-body px-3 py-3 pt-5">
+                      <img
+                        class="next-temp-img"
+                        src="imgs/Screenshot 2022-01-14 080319.png"
+                        alt=""
+                        style="height: 90px; width: 90px"
+                      />
+                      <h3>
+                        <span class="next-max-temp text-light">15</span>
+                        <span><sup>o</sup>C</span>
+                      </h3>
+                      <h5 class="text-muted">
+                        <span class="next-min-temp fw-bolder">6</span>
+                        <span><sup>o</sup>C</span>
+                      </h5>
+                      <p class="next-condition-text">cloudy</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <footer>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="search">
+              <input
+                type="email"
+                class="input-data form-control p-2"
+                placeholder="Enter Your Email to Subscribe"
+              />
+              <input
+                type="button"
+                class="find rounded rounded-pill text-center"
+                value="Subscribe"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="socials">
+              <a href="https://www.facebook.com" target="_blank"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="https://www.twitter.com" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.google.com" target="_blank"
+                ><i class="fa-brands fa-google"></i
+              ></a>
+              <a href="https://www.pinterest.com" target="_blank"
+                ><i class="fa-brands fa-pinterest"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <p class="m-5">
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
